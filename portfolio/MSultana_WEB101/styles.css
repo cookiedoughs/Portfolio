@@ -1,0 +1,410 @@
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+
+  When To Modify:
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/* Navbar */
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #d36a54;
+    color: white;
+    text-align: center;
+    padding: 25px; 
+    z-index: 1000;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: gold;
+}
+
+/* Header */
+body {
+    margin: 0;
+    padding: 10;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-family: Helvetica, sans-serif;
+    background-color: #f8f7db;
+}
+#header-img {
+    width: 200px;
+    display: block;
+    margin: 30px auto;
+}
+
+.main_section{
+    background: #f8f7db;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 250px;
+    justify-content: center;
+}
+
+h1 {
+    color: #d36a54;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Buttons */
+
+button {
+    background: #91c180;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45613b;
+}
+
+/* About */
+
+
+
+.schedule-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;  
+    align-content: space-around; 
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.expect-item {
+    background: rgb(105, 147, 110);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+.expect-item img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.Sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+.Sponsors a {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+.Sponsors img {
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
+}
+
+
+.everything{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1in;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #d36a54;
+    color: white;
+    text-align: center;
+    
+}
+
+/* Default dark mode style */
+.dark-mode {
+background: rgb(17, 17, 117);
+color: white;
+}
+.dark-mode .main_section{
+    background-color: #2e046d;
+}
+.dark-mode h1 {
+    color: #72166b;
+}
+.dark-mode button {
+    background-color: #0e041d;
+}
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+    background-color: #392b4e;
+}
+.dark-mode .spotlight-card{
+    background-color: #2e046d;
+}
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.rsvp-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.rsvp-para {
+    width: 40%;
+}
+
+.rsvp-participants {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.participant-list {
+    width: fit-content;
+    text-align: left;
+}
+
+.form-container {
+    background: rgb(239, 212, 205);
+    border-radius: 20px;
+    margin: 60px; 
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 6px 20px rgba(129, 74, 74, 0.1);
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background-color: #ca8e8e;
+}
+/* Add other rsvp-related selectors here */
+
+.reduce-motion * {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Spotlight Card */
+
+.spotlight-card {
+    display: flex;
+    gap: 40px;
+    margin: 60px ;
+    padding: 40px;
+    background: rgb(243, 243, 243);
+    border-radius: 20px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,.1);
+}
+.dark-mode spotlight-card{
+    background: rgb(0, 0, 0);
+}
+
+.spotlight-left {
+    flex: 2;
+}
+
+.spotlight-right {
+    flex: 1;
+}
+
+.spotlight-label {
+    color: #d36a54;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.spotlight-description {
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #d36a54;
+    text-decoration: none;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tag {
+    background: #f7d7de;
+    color: #c04468;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.video-card {
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.action-card {
+    background: #d36a54;
+    border: 1px solid #e5e5e5;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.action-card:hover {
+    transform: translateY(-3px);
+}
+
+
+/*** Animations  ***
+  
+  Purpose:
+  - Add style rules to enable scroll animations for your website
+
+  When To Modify:
+  - [ ] Project 8 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.revealable {
+  --reveal-distance: 100px; /* CSS Variable */
+
+  scroll-margin-top: var(--reveal-distance);
+  opacity: 0;
+  transition: all 0.8s ease;
+  position: relative;
+  transform: translateY(var(--reveal-distance));
+}
+
+.active {
+  scroll-margin-top: 0;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/*** Success Modal  ***
+  
+  Purpose:
+  - Add style rules to your website's pop-up modal, which appears
+    when a user successfully submits the RSVP form
+
+  When To Modify:
+  - [ ] Project 9 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    padding: 40px;
+    width: 55%;
+    max-width: 600px;
+    position: relative; 
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.modal-item {
+    flex: 1;
+}
+
+#modal-image {
+    width: 180px;
+    height: auto;
+}
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+   
+    padding: 6px 10px;
+    font-size: 16px;
+}
+
+.modal-close:hover {
+    background: #acd7a8;
+}

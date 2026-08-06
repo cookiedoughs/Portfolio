@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title> Women In Tech Networking Picnic</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+        <style> 
+            /* Style rules go here. */
+        
+        </style>
+    </head>
+    <body>
+     <!-- navbar
+
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [ ] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+    <div class="navbar">
+        <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Updates">Updates</a></li>
+        <li><a href="#Contacts-Us">Contacts Us</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Sponsors">Sponsors</a></li>
+        <li><button id="theme-button">Toggle Dark Mode</button></li>
+        <li><button id="reduce-motion">Reduce Motion</button></li>
+        </ul>
+    </div>
+    
+    <div class="main_section"> 
+    <img id="header-img" src="img/pinic_table.png"/>
+    <h1>Washington DC's Women In Tech</h1>
+    <h1> Networking Picnic</h1>
+    <h2>Join us for a great day!</h2>
+    
+        
+        <a href= "#rsvp"><button type="button">RSVP Now</button></a>
+        <a href="#About">
+            <button type="button">Learn More</button>
+        </a>
+    </div>  
+
+    <div class = "everything">
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+    
+    <div class = "details">   
+        <!-- about
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <section id="About" class="about_section">
+        <h2>About the Event</h2>
+        <p>Calling all DMV Tech Professionals! 
+            Please join us on Saturday, August 15th, 
+            3PM -6PM for an afternoon of 
+            connections, sunshine, and a picnic lunch!</p>
+        </section>
+        <h3>What to Expect</h3>
+<!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+    <div class="schedule-container">
+
+    <div class="expect-item">
+        <img src="img/chatting.png" width="300" height="300">
+        <h3>Networking</h3>
+        <p>Meet other women in tech.</p>
+    </div>
+
+    <div class="expect-item">
+        <img src="img/save_the_date.png" width="300" height="300">
+        <h3>Picnic Lunch</h3>
+        <p>Enjoy food and conversation.</p>
+    </div>
+
+    <div class="expect-item">
+        <img src="img/women_volleyball.png" width="300" height="300">
+        <h3>Group Activities</h3>
+        <p>Fun games to play with new friends.</p>
+    </div>
+
+    </div>
+    <div class = "schedule">
+     <h2>Event Schedule</h2>
+     <section class="spotlight-card revealable">
+
+    <div class="spotlight-left ">
+        <p class="spotlight-label"></p>
+        <h2>Women in Technology</h2>
+        <p class="spotlight-description">
+            Women continue to shape the future of technology through
+            innovation, leadership, entrepreneurship, and community
+            building. Join us at the networking picnic to connect with
+            professionals, mentors, and future collaborators.
+        </p>
+
+        <a href="#rsvp" class="learn-more ">
+            Learn More →
+        </a>
+        <h4>Topics You'll Discuss</h4>
+        <div class="tag-container revealable">
+            <span class="tag">Networking</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">Mentorship</span>
+            <span class="tag">Career Growth</span>
+        </div>
+    </div>
+
+    <div class="spotlight-right revealable">
+        <h4>Why The World Needs More Women In Tech</h4>
+        <div class="video-card revealable">
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/watch?v=xQGshHOUy8k&pp=ygUfdGVjaCBjb21wYW5pZXMgc3VwcG9ydGluZyB3b2Vtbg%3D%3D"
+                title="Women in Tech"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <div class="action-card">Download Event Guide</div>
+
+        <div class="action-card">Explore Tech Careers</div>
+        <div class="action-card">Contact Us</div>
+
+    </div>
+
+</section> 
+        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+    <!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+<div id="rsvp">
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+
+    <div class="rsvp-para">
+        <h3>Join the Picnic!</h3>
+        <p>
+            Connect with women in technology from across the country.
+            Fill out the form to reserve your spot and meet other
+            professionals in the DMV area.
+        </p>
+    </div>
+
+    <div class="rsvp-participants">
+        <h3 id="rsvp-count">3 people have RSVP'd!</h3>
+        <p>🎟️ DJ from Texas has RSVP'd.</p>
+        <p>🎟️ Amy from New York has RSVP'd.</p>
+        <p>🎟️ Teresa from Montana has RSVP'd.</p>
+    </div>
+
+</div>
+        <div class="participants">
+  <!-- RSVPs go here -->
+</div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container revealable">
+        <h3>Submit your RSVP</h3>
+        <form id="rsvp-form" title="rsvp-form">
+            <!-- form inputs go here -->
+            Name: <input type="text" id="name" placeholder="Name" required>
+            State: <input type="text" id="state" placeholder="State" required>
+            Email: <input type="email" id="email" placeholder="Email" required>
+        </form>
+        <!-- Submit button -->
+         <p></p>
+        <button id="rsvp-button">Submit RSVP</button>
+    </div>      
+</div>
+
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+         <!-- success modal
+
+Purpose:
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify:
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+
+<div id="success-modal" class="modal">
+    <div class="modal-container">
+
+        <button id="modal-close" class="modal-close">Close</button>
+
+        <div class="modal-item">
+            <p id="modal-text"></p>
+        </div>
+
+        <div class="modal-item">
+            <img id="modal-image" src="img/flower power.png">
+        </div>
+
+    </div>
+</div>
+
+    
+    <section id = "Sponsors" >
+        <!-- links
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+
+       
+        <h1>Check Out Our Sponsors!</h1>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+       
+            <div class="Sponsors">
+            <a href="https://www.codepath.org">
+                <img src="img/codepath_logo+(1)-732797762.png" alt="Clickable Image">
+            </a>
+        
+            <a href="https://www.aboutamazon.com/about-us">
+                <img src="img/amazon.png" alt="Clickable Image">
+            </a>
+            <a href="https://www.cisco.com/c/m/en_us/training-events/events-webinars/women-of-impact-2026.html">
+                <img src="img/cisco.png" alt="Clickable Image">
+            </a>
+        <a href="https://openai.com/index/built-to-benefit-everyone/">
+                <img src="img/openai.png" alt="Clickable Image">
+            </a>
+            <a href="https://www.apple.com/newsroom/2022/12/across-the-globe-apple-and-its-teams-find-new-ways-to-give/">
+                <img src="img/apple.png" alt="Clickable Image">
+            </a>
+        </div> 
+    </section>
+        
+    </div>     
+    <!-- Women in Tech Spotlight Card -->
+
+       
+         
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+    <script src="index.js"></script>
+    </body>
+    <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <footer id="footer" class="footer">
+            <p>~Created by Mun! Updated: Augusy 2026</p>
+        </footer>
+    </html>
